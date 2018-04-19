@@ -1,6 +1,6 @@
 (function() {
     'use strict';
-    var app = angular.module('DIApp', ['ngRoute'])  
+    var app = angular.module('DIApp', ['ngRoute']);  
     app.controller('DIController', DIController);
     function DIController ($scope, $filter, $injector){
         $scope.name = "Charlotte";
@@ -16,7 +16,7 @@
     /*  console.log(AnnotateMe());
     console.log(AnnotateMe);
     console.log(AnnotateMe.toString());*/
-    console.log(DIController.toString());
+  /*  console.log(DIController.toString());*/
 }});
 
 
