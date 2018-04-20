@@ -1,22 +1,19 @@
-(function() {
+(function () {
     'use strict';
-    var app = angular.module('DIApp', ['ngRoute']);  
-    app.controller('DIController', DIController);
+    var app = angular.module('DIApp', [])  
+    app.controller('DIController', DIController); 
     function DIController ($scope, $filter, $injector){
-        $scope.name = "Charlotte";
+        $scope.name = "Yaakov";
         $scope.upper = function (){
-            var upCase = $filter ('uppercase');
+            var upCase = $filter('uppercase');
             $scope.name = upCase($scope.name);
-        }
+        };
         console.log($injector.annotate(DIController));
-                   
-    function AnnotateMe(name, job, blah) {
-        return "blah"
+    };
+    
+    function AnnotateMe (name, job, blah) {
+        return "Blah!";
     }
-    /*  console.log(AnnotateMe());
-    console.log(AnnotateMe);
-    console.log(AnnotateMe.toString());*/
-  /*  console.log(DIController.toString());*/
-}});
-
-
+    console.log(AnnotateMe.toString());
+    console.log(DIController.toString());
+})();
