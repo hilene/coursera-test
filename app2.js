@@ -5,11 +5,14 @@
     MsgController.$inject = ['$scope'];
     function MsgController ($scope){
         $scope.name = "Louise";
-        $scope.stateOfBeing = "pleased";
+        $scope.stateOfBeing = "thirsty";
         
         $scope.sayMessage = function (){
             return "I love to drink coffee with you!";
         }
+        $scope.pourCoffee = function (){
+            $scope.stateOfBeing = "pleased";
+        };
     }
 
 })();

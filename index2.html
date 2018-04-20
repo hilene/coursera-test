@@ -15,7 +15,8 @@
             <div>
              <button ng-click ="pourCoffee()">a Coffee for Louise</button>
              <br>
-             <img src="images/louise_{{stateOfBeing}}.png" >
+               <!-- ng-src to prevent error generation due to line by line reading mode of the computer-->
+             <img ng-src="louise_{{stateOfBeing}}.jpeg" >
             </div>
         </div>
     </body>
