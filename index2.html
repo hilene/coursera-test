@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <script src="angular.min.js"></script>
         <script src="app2.js"></script>
-        <title>Expression and interpolation</title>
+        <title>{{Expression}}and interpolation</title>
     </head>
     <body>
         <h1>Expression and interpolation</h1>
@@ -12,6 +12,11 @@
             <!--concatenation of place holders-->
             {{name}} has a message for you: <br>
             {{sayMessage()}}
+            <div>
+             <button ng-click ="pourCoffee()">a Coffee for Louise</button>
+             <br>
+             <img src="images/louise_{{stateOfBeing}}.png" >
+            </div>
         </div>
     </body>
 </html>

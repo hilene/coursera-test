@@ -5,6 +5,8 @@
     MsgController.$inject = ['$scope'];
     function MsgController ($scope){
         $scope.name = "Louise";
+        $scope.stateOfBeing = "pleased";
+        
         $scope.sayMessage = function (){
             return "I love to drink coffee with you!";
         }
